@@ -13,7 +13,7 @@ class Node2{
 public class ReverseLinkedList
 {
 	public static Node2 reverseList(Node2 head) {
-        if(head == null )
+        if(head == null || head.next == null)
         return head;
         
         Node2 curr = head;
