@@ -47,3 +47,4 @@ git commit -a -m "Message for direct commit"      :- without going to staging ar
 git rm --cached        :- It will remove byMistakelyAdded_AndCommitedFile from Staged area
 
 git rm 			:- It will reove byMistakelyAdded_AndCommitedFile from everywhere eventhouh it has been commited
+
