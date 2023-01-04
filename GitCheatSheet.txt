@@ -1,0 +1,49 @@
+git config --global user.name Amit
+git config --global user.email amitext81@gmail.com
+git config --global user.name
+git config --global user.email
+git init
+ls -lart
+ git status
+git add CreatingLinkedList_byTakingUserInput.java
+ git status
+git commit -m "Initial commit"
+ git status
+touch LinkedListClass.java
+touch ReverseLinkedList.java
+ git status
+git add -A
+git status
+------------after modification of anyone of two file (ReverseLinkedList.java)
+ git status
+git add -A
+ git status
+git commit -m "ReverseLinkedList code done"
+ git status
+---------suppose some child has changed & saved some File then you can track that file and Restore previous version by using below commands
+
+git status  :- you will come to know modified file name then
+
+-- suppose modified file name was ReverseLinkedList.java   
+
+git checkout ReverseLinkedList.java   :- file will be restored
+
+git log  :- shows all commit
+
+git log -p -1      :- here -1 shows no of commit you want to see	
+
+git diff  :- compares working Directory to Staging Area    And shows difference where you have changed with which code
+
+git add -A
+
+git diff  :- It will not show anything because my working directory and my staging area are same
+
+git diff --staged     :- It will compare my stagging area to last commit                 //staging area ko las commit se compare karta h
+
+git checkout -f       :- It will restore and keep my file as it was before last commit   //last commit se phle file jaisa tha waisa kar dega
+
+git commit -a -m "Message for direct commit"      :- without going to staging area it will directly commit all changes from Untracked area.
+
+git rm --cached        :- It will remove byMistakelyAdded_AndCommitedFile from Staged area
+
+git rm 			:- It will reove byMistakelyAdded_AndCommitedFile from everywhere eventhouh it has been commited
